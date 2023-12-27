@@ -1,0 +1,11 @@
+{
+  "authModule": "Auth Module",
+  "membershipModule": "Memberships Module",
+  "settingModule": "Settings Module",
+  "marketingModule": "Marketing Module",
+  "suportModule": "Support Module",
+  "notificationModule": "Notification Module",
+  "organizationModule": "Organization Module",
+  "userModule": "User Module",
+  "landingPageModule": "LandingPage Module"
+}

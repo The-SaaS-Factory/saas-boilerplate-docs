@@ -1,0 +1,50 @@
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+<Steps>
+### Step 1
+ 
+Download, fork or clone
+[the repo](https://github.com/The-SaaS-Factory/backend-saas-boilerplate-node-apollo-graphql-TS)
+  and install dependencies.
+ 
+```bash
+git clone https://github.com/The-SaaS-Factory/backend-saas-boilerplate-node-apollo-graphql-TS.git
+```
+```bash
+cd backend-saas-boilerplate-node-apollo-graphql-TS
+```
+```bash
+npm install
+```
+
+### Step 2
+Create a MySQL DB in your local environment (Xampp, Wamp, Laragon, etc).
+
+### Step 3
+Copy the `.env.example` file to `.env` and update the environment variables accordingly.
+ 
+ <Callout type="warning" emoji="⚠️">
+  The DATABASE_URL variable  is the connection string to your MySQL DB.
+  Example: `mysql://root:root@localhost:3306/saas-boilerplate`
+</Callout>
+### Step 4
+Run the prisma commands to push the schema to the database and generate the client.
+ 
+```bash
+npx prisma db push
+```
+
+Run the seed (Optional)
+```bash
+npx prisma db seed  
+```
+ 
+### Step 5
+Run the app in the development mode.
+ 
+```bash
+npm run start
+```
+ 
+</Steps>

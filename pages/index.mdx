@@ -1,11 +1,34 @@
-# Introduction
+# The SaaS Factory Boilerplate
+Welcome to the documentation of our SaaS Boilerplate, a powerful and versatile tool designed to expedite the web application development process. This boilerplate integrates cutting-edge technologies such as GraphQL, Apollo, TypeScript, React, and Tailwind CSS to provide a solid and efficient foundation for building Software as a Service (SaaS) applications.  
+
+## Key Tech Features:
+
+1.  **GraphQL with Apollo :** The GraphQL-based architecture makes data retrieval efficient, while Apollo Client simplifies application state management, enhancing user experience and reducing server load.
+    
+2.  **TypeScript:** Leverage the power of TypeScript's static typing system to detect and prevent errors at compile time, providing increased confidence and productivity during development.
+    
+3.  **React:** Build dynamic and responsive user interfaces with React, the leading JavaScript library for creating reusable and easily maintainable components.
+    
+4.  **Tailwind CSS:** Streamline the design and styling of your application with Tailwind CSS, a utility-first framework that enables you to quickly customize your application's appearance without sacrificing code readability.
+
+5. **Prisma:** Prisma is one of the best current ORMs to manage databases
+
+6. **Clerk:** Powerful authentication manager allowing you to add social providers and manage organizations, permissions and roles
+What you avoid doing by using this boilerplate
+
+6. **Stripe:**  Stripe is the best payment gateway to manage subscriptions and payments
  
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+## 10 reasons to build your next saas with this boilerplate
 
-## What is Nextra?
-
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
-
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+ 1. **User registration and authentication system:**  By just adding the clerk api key in the environment variables you will have the entire system complete so that your users can register in your application and log in later. With everything that involves user management thanks to Clerk technology such as profile page, two-factor authentication, session management, password recovery, etc.
+ 2. **Management of organizations:** Within a saas, the most common thing is that a user can create several organizations / teams to give access to shared resources to other members of their company... Clerk provides this technology and in a very powerful way. It will blow your mind because of how powerful and easy to handle it is.
+ 3. **Boilerplate organized to scale with well-defined code for each user role:** It's very easy, in most saas there are 3 main parts, the front part of the landing page, the software part for the users who authenticate and pay the membership and the main administration part... We call it: "Landing Pages", "Admin Pages", "Super Admin Pages", this is how the code is structured so that you can add features in a modular way
+ 4. **Membership plans ready together with Stripe:** From the SuperAdmin part you can create and connect membership plans with Stripe and easily charge clients. Additionally, something super powerful is a system of capabilities connected to each plan to guarantee the use of certain resources according to the plan contracted for each client.
+ 5. **Support system through tickets:** Administrators (Users who pay membership) will be able to open support tickets so that the Super Admin (SaaS owners) can answer these and change their status according to the stage that the service is escalating. ticket. Really useful
+ 6. **Useful integrations ready to use:** We have the integration ready with ImageKit.io to store all the Media you use and with Loops.so for all the email marketing, audiences and transactional emails
+ 7. **Dashboard for Admin and Super Admin:** Everything is ready to add the modules of your business model, all the other parts of the administrators and super admin dashboards are ready, responsive, with draktheme and super clean and professional thanks to Tailwind
+ 8. **Components that speed up the process for you:** We have a component called NewForm that, just by passing it an array of parameters, builds a page with a ready-to-use form and another called NewCRUD that goes one step further by creating a CRUD for any model just by passing it an array of parameters
+ 9. **We run on Vite:** Vite is fast, efficient and powerful to guarantee a good experience in the development of your SaaS
+10. **Ongoing support and maintenance:** Constant support and maintenance: This boilerplate is actively used by several software development companies to develop their clients' products.
+ 
+This document will guide you through the setup, usage, and customization of our boilerplate, allowing you to focus on developing unique features for your SaaS application. Let's embark on this journey of building together!

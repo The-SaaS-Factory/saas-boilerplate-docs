@@ -1,0 +1,102 @@
+import { Bleed } from 'nextra-theme-docs'
+ 
+<Bleed>
+![enter image description here](https://ik.imagekit.io/cluzstudio/01-cluzstudio/boilerplate_zpfPgAExv.png?updatedAt=1703706286400)
+  ## Frontend
+   **Frontend project overview**
+
+   ```js filename="frontend / src"
+    src/
+	    |- components/
+	          |- core/
+		       |- ui/
+              |- layouts
+        |- pages/
+              |- adminPages/ -> modules for admin
+	          |- landingPages/ -> public pages
+		       |- superAdminPages/ -> modules for super admin
+        |- routes
+	          |- AdminRoot.tsx
+	          |- LandingRoot.tsx
+		       |- SuperAdminRoot.tsx
+		 |- utils
+	          |- constants/
+	          |- facades/
+		       |- graphql/
+		       |- hooks/
+		       |- types/
+	    App.tsx
+	    index.css
+	    main.tsx
+	    Router.tsx
+        ```
+       **Module folder overview**
+        ```js filename="adminPages/"
+            |- billingModule/
+               AdminBillingPage.tsx  -> main page for module 
+               AdminPlanActive.tsx 
+               billingTypes.ts
+               billingGraphql.ts 
+            
+          ```
+         **Module main page overview**
+   ```js filename="AdminBillingPage.tsx"
+      export default function AdminBillingPage() {
+         //Global state and hooks
+
+         //Queries and mutations
+
+         //Hooks
+
+         //Functions
+
+         return (
+            <div>
+               <PageName // Ui component for page name
+                    name="Settings"
+                    breadcrumbs={[
+                    {
+                        name: "Home",
+                        href: "/home",
+                    },
+                    {
+                        name: "Settings",
+                        href: "/home/settings",
+                    },
+                    ]}
+                />
+
+                //Main content for page
+            </div>
+         )
+      }
+   ```
+
+         ## Backend
+   **Backend project overview**
+
+   ```js filename="backend "
+    prisma /
+        |- seeds /
+        |- schema.prisma
+        |- seed.ts
+    src/
+	    |- facades/ -> extra functions for each module
+        |- graphql/
+        |- routes/
+		 |- types
+	index.ts  -> main file for backend, Apollo server and express export the graphql endpoint
+        ```
+
+    **Graphql folder overview**
+    ```js filename="src/graphql/" "
+       user.ts -> user schema module, resolver and types
+       organization.ts -> organization module schema, resolver and types
+       membership.ts -> membership module schema, resolver and types
+       support.ts  -> support schema module, resolver and types
+       ...etc
+	   shema.ts -> main schema for graphql, join all TypeDefs and Resolvers
+        ```
+
+</Bleed>
+ 
