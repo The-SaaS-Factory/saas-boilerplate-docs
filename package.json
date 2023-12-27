@@ -1,6 +1,6 @@
 {
   "name": "the-saas-factory-boilerplate-docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The SaaS Factory Boilerplate Docs",
   "scripts": {
     "dev": "next dev",
